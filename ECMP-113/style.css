@@ -1,0 +1,68 @@
+  body {
+      background-color: #a2d2e5
+  }
+
+  div {
+      color: rgb(255, 255, 255)
+  }
+
+  footer {
+      color: rgb(255, 255, 255)
+  }
+
+  body {
+      font-family: 'Courier New', Courier, monospace;
+  }
+
+  a {
+      font-size: 20px;
+  }
+
+  .main-content {
+      color: rgb(255, 255, 255)
+  }
+
+  a {
+      color: blueviolet;
+  }
+
+  h1 {
+      width: 50%;
+      height: 5%;
+      border-width: 8px;
+      border-color: rgb(255, 255, 255);
+      border-style: double;
+      border-radius: 50px;
+      text-align: center;
+      box-shadow: 0 6px 10px 4px whitesmoke;
+      font-size: 50px;
+      font-style: bolder;
+      padding: 40px;
+      margin-left: 450px;
+  }
+
+  h2 {
+      margin-left: 250px;
+
+  }
+
+  img {
+      margin-left: 250px;
+  }
+
+  video {
+      margin-left: 250px;
+  }
+
+
+  body {
+      color: white;
+  }
+
+  p {
+      margin-left: 250px;
+  }
+
+  footer {
+      margin-left: 250px;
+  }
