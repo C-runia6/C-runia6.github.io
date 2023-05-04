@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TEST SITE</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jokes.html">
+</head>
+
+<body>
+
+
+
+
+
+
+
+    <nav>
+
+        <a href="./index.html">Home</a>
+        <a href="./contact.html"> Contact </a>
+        <a href="./jokes.html">Joke Generator</a>
+    </nav>
+
+
+
+    <header role="banner">
+        <h1 id="intro" draggable="true" class="main-heading" style="color:hsl(0, 0%, 100%)">Welcome to my
+            test website</h1>
+        <h2 style="color:rgb(255, 255, 255)"> This page is a test website, on here
+            I am testing images videos colors
+            shapes fonts and links on this website.
+        </h2>
+    </header>
+
+    <div class="main-content">
+
+        <h2>Hi, I am Christopher</h2>
+        <h2>I was born in 2009 April 29th and I am testing this website.</h2>
+        <img src="_D4T6615.jpg" alt="Profile Photo" width="500" height="400">
+        <h2>Lacrosse is an awesome sport</h2>
+        <br>
+        <video src="sunset-153976.mp4" controls="video/mp4" width="500" height="325"></video>
+        <h2 onclick="myFunction()"> Here is a time lapse video of a sunset.</h2>
+    </div>
+    <h2> User Details Form</h2>
+    <form action="" class="my-Form" id="myForm">
+
+        <h3><label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="name...">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="email...">
+
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+
+
+            <input class="submit" type="submit" value="Sumbit This Form">
+        </h3>
+
+
+    </form>
+
+    <section class="stories-section">
+        <h3 class="info">More info on me</h3>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+        <br>
+        <a href="https://www.nll.com/">Here is the National Lacrosse League (NLL).</a>
+        <br>
+        <br>
+
+    </footer>
+</body>
+<script>
+    var first_name = "Christopher";
+    var last_name = "Runia";
+
+
+
+    function calculateSum(firstNumber, secondNumber) {
+        var sumOfTwoNumbers = firstNumber + secondNumber;
+
+        return sumOfTwoNumbers;
+    }
+
+    var sum = calculateSum(5, 10)
+
+    console.log("Sum of two nums", sum)
+
+
+    var funnyEmoji = "😀";
+    console.log(funnyEmoji);
+
+    function myFunction() {
+        console.log(funnyEmoji)
+        alert("you are him")
+    }
+
+    function changeName() {
+        document.getElementById("intro").innerHTML = 'Hey Christopher here.'
+    }
+
+    document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
+
+    function handleFormSubmit(event) {
+        event.preventDefault();
+
+        var name = document.getElementById("first-name").value;
+        var email = document.getElementById("email").value;
+        var birthday = document.getElementById("birthday").value;
+
+        console.log(name)
+        console.log(email)
+        console.log(birthday)
+
+        document.getElementById("intro").innerHTML = "hello there " + name
+
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+</html>
